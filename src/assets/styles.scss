@@ -1,0 +1,22 @@
+$primary: #01A7FD;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+:root {
+  font-size: 16px;
+}
+
+.btn-outline-primary {
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-color: #fff;
+
+  fill: $primary;
+
+  & > svg {
+    transition: fill 200ms ease-in-out, stroke 200ms ease-in-out;
+  }
+  &:hover,
+  &:active {
+    fill: #fff;
+  }
+}
