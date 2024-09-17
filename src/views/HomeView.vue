@@ -12,7 +12,12 @@ const store = useStore()
 
     <section class="mt-5">
       <div class="h5">Дети</div>
-      <div v-for="child in store.children" class="text-bg-light child_badge badge fs-6 px-3 py-3">{{ child.name }}, {{ child.age }} лет</div>
+
+      <div v-for="child in store.children">
+        <div class="text-bg-light child_badge badge fs-6 px-3 py-3">
+          {{ child.name }}, {{ child.age }} лет
+        </div>
+      </div>
     </section>
   </div>
 

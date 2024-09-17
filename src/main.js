@@ -14,12 +14,14 @@ import "@/assets/styles.scss"
 
 const routes = [
     {
-        path: '/',
-        component: HomeView
+        path: '/test_task_alef',
+        component: HomeView,
+        name: 'home'
     },
     {
-        path: '/form',
-        component: FormView
+        path: '/test_task_alef/form',
+        component: FormView,
+        name: 'form'
     }
 ]
 

@@ -9,10 +9,10 @@
         <img src="@/assets/Logo.png" alt="">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <RouterLink to="/" active-class="active" class="nav-link" aria-current="page" href="#">Превью</RouterLink>
+            <RouterLink :to="{name: 'home'}" active-class="active" class="nav-link" aria-current="page" href="#">Превью</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/form" active-class="active" class="nav-link" href="#">Форма</RouterLink>
+            <RouterLink :to="{name: 'form'}" active-class="active" class="nav-link" href="#">Форма</RouterLink>
           </li>
         </ul>
       </div>

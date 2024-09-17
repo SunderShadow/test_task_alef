@@ -13,6 +13,8 @@ const canAddChildren = computed(() => children.value.length >= MAX_CHILDREN_COUN
 
 const toastVisible = ref(false)
 
+const childNames = ref()
+
 function removeChild(key) {
   if (children.value.length === 1) {
     children.value = []
@@ -68,7 +70,7 @@ function save() {
     <div class="row mt-3" v-for="(child, i) in children">
       <div class="col-auto">
         <div class="form-floating">
-          <input v-model="child.name" type="text" class="form-control" placeholder="Имя">
+          <input v-model="child.name" type="text" class="form-control" placeholder="Имя" ref="childNames">
           <label>Имя</label>
         </div>
       </div>
